@@ -1,0 +1,113 @@
+/********Body********/
+body
+{
+    margin: 10;
+    padding: 0;
+    font-family: Century Gothic;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    background-image: url("C:/Users/Admin/Desktop/Web Development/Portfolio/images/indexBg.jpg");
+}
+
+/********Navigation Bar********/
+#header
+{
+    float: center;
+    height: 150px;
+}
+.header
+{
+    margin-left: 41%;
+    margin-top: 5%;
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+}
+.header li a
+{
+    text-decoration: none;
+    color: rgb(182, 182, 182);
+    font-weight: 700;
+    font-size: 25px;
+    
+}
+.header li#active a
+{
+    color: rgb(0, 0, 0);
+}
+ul li a:hover{
+    color: rgb(102, 102, 102);
+}
+
+/********Introduction********/
+.intro
+{
+    margin-left: 10%;
+    margin-top: 5%;
+}
+#name p
+{
+    font-size: 90px;
+    line-height: 35px;
+    font-weight: 900;
+}
+#smallText p
+{
+    font-size: 30px;
+}
+#smallText p #big
+{
+    font-weight: 800;
+}
+
+/********Buttons********/
+#about
+{
+    margin-left: 10%;
+    margin-top: 4%;
+    border: 5px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    margin-right: 79.3%;
+}
+.ab
+{
+    color: rgb(0, 0, 0);
+    list-style-type: none;
+    font-size: 22px;
+    font-weight: 600;
+}
+.ab li a
+{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+#projects
+{
+    margin-left: 23%;
+    margin-top: -4.3%;
+    padding-left: 0.5%;
+    border: 5px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    margin-right: 67%;
+}
+.pj
+{
+    color: rgb(0, 0, 0);
+    list-style-type: none;
+    font-size: 22px;
+    font-weight: 600;
+}
+.pj li a
+{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/********Copyright********/
+#copyright
+{
+    margin-top: 6%;
+    margin-left: 2%;
+}

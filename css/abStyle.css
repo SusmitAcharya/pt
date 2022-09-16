@@ -1,0 +1,79 @@
+/********Body********/
+body
+{
+    margin: 10;
+    padding: 0;
+    font-family: Century Gothic;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    background-image: url("C:/Users/Admin/Desktop/Web Development/Portfolio/images/bg.jpg");
+}
+
+/********Navigation Bar********/
+#header
+{
+    float: center;
+    height: 150px;
+}
+.header
+{
+    margin-left: 41%;
+    margin-top: 5%;
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+}
+.header li a
+{
+    text-decoration: none;
+    color: rgb(182, 182, 182);
+    font-weight: 700;
+    font-size: 25px;
+    
+}
+.header li#active a
+{
+    color: rgb(0, 0, 0);
+}
+ul li a:hover{
+    color: rgb(102, 102, 102);
+}
+
+/********Horizontal Bars********/
+.hr
+{
+    margin-left: 40%;
+    margin-right: 36%;
+}
+
+/********Main********/
+.about
+{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.about .content
+{
+    margin-top: 7%;
+    padding: 2%;
+}
+.about .image
+{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: left;
+}
+.about .text
+{
+    padding-left: 20%;
+    margin-top: -1%;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+/********Copyright********/
+#copyright
+{
+    margin-top: 6%;
+    margin-left: 2%;
+}
