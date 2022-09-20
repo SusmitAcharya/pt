@@ -6,7 +6,7 @@ body
     font-family: Century Gothic;
     background-size: cover;
     color: rgb(0, 0, 0);
-    background-image: url("C:/Users/Admin/Desktop/Web Development/Portfolio/images/bg.jpg");
+    background-image: url("images/bg.jpg");
 }
 
 /********Navigation Bar********/
@@ -57,18 +57,43 @@ ul li a:hover{
     margin-top: 7%;
     padding: 2%;
 }
+.about .below
+{
+    margin-top: -3%;
+}
+.about .below1
+{
+    margin-top: 4%;
+}
 .about .image
 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.about .left
+{
     float: left;
+    margin: 3%;
+}
+.about .right
+{
+    float: right;
+    margin-right: 3%;
 }
 .about .text
 {
-    padding-left: 20%;
+    padding-left: 3%;
     margin-top: -1%;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 25px;
+    line-height: 45px;
     font-weight: 500;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about .text .quote
+{
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    line-height: 45px;
 }
 
 /********Copyright********/
