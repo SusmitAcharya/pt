@@ -1,3 +1,8 @@
+/********Responsive - For Desktop********/
+
+@media(min-width: 765px)
+{
+
 /********Body********/
 body
 {
@@ -150,4 +155,173 @@ ul li a:hover{
 {
     margin-top: 6%;
     margin-left: 2%;
+}
+
+}
+
+
+/********Responsive - For Tablet********/
+
+@media(min-width: 590px)
+{
+
+/********Body********/
+body
+{
+    margin: 10;
+    padding: 0;
+    font-family: Century Gothic;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    background-image: url("images/bg.png");
+}
+
+/********Navigation Bar********/
+#header
+{
+    float: center;
+    height: 150px;
+}
+.header
+{
+    margin-left: 25%;
+    margin-top: 5%;
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+}
+.header li a
+{
+    text-decoration: none;
+    color: rgb(182, 182, 182);
+    font-weight: 700;
+    font-size: 25px;
+    
+}
+.header li#active a
+{
+    color: rgb(0, 0, 0);
+}
+ul li a:hover{
+    color: rgb(102, 102, 102);
+}
+
+/********Horizontal Bars********/
+.hr
+{
+    margin-left: 40%;
+    margin-right: 36%;
+    margin-top: -5%;
+}
+
+/********Main********/
+.about
+{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.about .content
+{
+    margin-top: 7%;
+    padding: 2%;
+}
+.about .below
+{
+    margin-top: -2%;
+}
+.about .below1
+{
+    margin-top: 4%;
+}
+.about .image
+{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.about .left
+{
+    float: left;
+    margin: 3%;
+    width: 300px;
+    height:300px;
+}
+.about .right
+{
+    float: right;
+    margin-right: 3%;
+    margin-left: 2%;
+    width: 300px;
+    height:300px;
+}
+.about .text
+{
+    padding-left: 3%;
+    padding-right: 3.5%;
+    margin-top: -1%;
+    font-size: 24.4px;
+    line-height: 45px;
+    font-weight: 500;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about .text .quote
+{
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    line-height: 54px;
+}
+
+/********Contact********
+.contact
+{
+    margin-top: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.contact .contactList
+{
+    list-style-type: none;
+    display: flex;
+}
+.contact .contactList .label
+{
+    padding-left: 2%;
+    padding-top: 3%;
+    width: 150%;
+    height: 100%;
+    background-color: #ff6600;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+}
+.contact .contactList .text
+{
+    width: 700%;
+    height: 80px;
+    margin-left: 15%;
+    background-color: black;
+    margin-right: -500%;
+}
+.contact .contactList .textBox
+{
+    width: 100%;
+    height: 125%;
+    font-size: 5px;
+    padding-left: 1%;
+}
+
+.contact .contactList .submit
+{
+    margin-left: 290%;
+    width: 70%;
+}
+**/
+
+/********Copyright********/
+#copyright
+{
+    margin-top: 6%;
+    margin-left: 2%;
+}
+
 }
