@@ -135,7 +135,7 @@ body
     font-family: Century Gothic;
     background-size: cover;
     color: rgb(0, 0, 0);
-    /**background-image: url("images/indexBg.jpg");**/
+    background-image: url("images/indexBg.jpg");
 }
 
 /********Navigation Bar********/
