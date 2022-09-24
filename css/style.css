@@ -1,7 +1,183 @@
+/********Respnsive - For Mobiles********/
+
+/********Body********/
+body
+{
+    margin: 10;
+    padding: 0;
+    font-family: Century Gothic;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    background-image: url("images/indexBg.jpg");
+}
+
+/********Navigation Bar********/
+#header
+{
+    float: center;
+    height: 150px;
+}
+.nav-menu
+{
+    margin-left: 25%;
+    margin-top: 5%;
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+}
+.nav-menu li a
+{
+    text-decoration: none;
+    color: rgb(182, 182, 182);
+    font-weight: 700;
+    font-size: 25px;
+    
+}
+.nav-menu li#active a
+{
+    color: rgb(0, 0, 0);
+}
+ul li a:hover{
+    color: rgb(102, 102, 102);
+}
+
+.hamburger
+{
+    display: block;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-left: 70%;
+}
+.bar
+{
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 5px auto;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background-color: #000;
+}
+
+.hamburger.active .bar:nth-child(2)
+{
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1)
+{
+    transform: translateY(9px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3)
+{
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+.nav-menu
+{
+    position: fixed;
+    left: -150%;
+    top: 40px;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.945);
+    width: 100%;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.nav-item
+{
+    margin: 16px 0;
+}
+.nav-menu.active
+{
+    left: -35%;
+}
+
+/********Introduction********/
+.intro
+{
+    margin-left: 10%;
+    margin-top: -9%;
+}
+#name p
+{
+    font-size: 54px;
+    line-height: 0;
+    font-weight: 900;
+}
+#name #nameText
+{
+    line-height: 80px;
+}
+#smallText p
+{
+    font-size: 25px;
+    line-height: 40px;
+    margin-top: -8%;
+}
+#smallText p #big
+{
+    font-weight: 800;
+}
+
+/********Buttons********/
+#about
+{
+    margin-left: 10%;
+    margin-top: 12%;
+    margin-right: 10%;
+    border: 5px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    text-align: center;
+}
+.ab
+{
+    color: rgb(0, 0, 0);
+    list-style-type: none;
+    font-size: 22px;
+    font-weight: 600;
+}
+.ab li a
+{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+#projects
+{
+    margin-left: 10%;
+    margin-top: 4%;
+    margin-right: 10%;
+    border: 5px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    text-align: center;
+}
+.pj
+{
+    color: rgb(0, 0, 0);
+    list-style-type: none;
+    font-size: 22px;
+    font-weight: 600;
+}
+.pj li a
+{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/********Copyright********/
+#copyright
+{
+    margin-top: 9%;
+    margin-left: 2%;
+    font-size: 13px;
+}
 
 /********Responsive - For Tablets********/
 
-@media(min-width: 590px)
+@media(min-width: 450px)
 {
     
 /********Body********/
@@ -21,7 +197,7 @@ body
     float: center;
     height: 150px;
 }
-.header
+.nav-menu
 {
     margin-left: 25%;
     margin-top: 5%;
@@ -29,7 +205,7 @@ body
     display: flex;
     gap: 40px;
 }
-.header li a
+.nav-menu li a
 {
     text-decoration: none;
     color: rgb(182, 182, 182);
@@ -37,7 +213,7 @@ body
     font-size: 25px;
     
 }
-.header li#active a
+.nav-menu li#active a
 {
     color: rgb(0, 0, 0);
 }
@@ -45,21 +221,75 @@ ul li a:hover{
     color: rgb(102, 102, 102);
 }
 
+.hamburger
+{
+    display: block;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-left: 70%;
+}
+.bar
+{
+    display: block;
+    width: 40px;
+    height: 6px;
+    margin: 7px auto;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background-color: #000;
+}
+
+.hamburger.active .bar:nth-child(2)
+{
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1)
+{
+    transform: translateY(13px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3)
+{
+    transform: translateY(-13px) rotate(-45deg);
+}
+
+.nav-menu
+{
+    position: fixed;
+    left: -150%;
+    top: 40px;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.945);
+    width: 100%;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.nav-item
+{
+    margin: 16px 0;
+}
+.nav-menu.active
+{
+    left: -27%;
+}
+
 /********Introduction********/
 .intro
 {
     margin-left: 10%;
-    margin-top: 5%;
+    margin-top: 15%;
 }
 #name p
 {
-    font-size: 60px;
-    line-height: 35px;
+    font-size: 65px;
+    line-height: 30px;
     font-weight: 900;
 }
 #smallText p
 {
-    font-size: 25px;
+    font-size: 26px;
+    margin-top: -5%;
 }
 #smallText p #big
 {
@@ -81,7 +311,7 @@ ul li a:hover{
 {
     color: rgb(0, 0, 0);
     list-style-type: none;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 600;
 }
 .ab li a
@@ -103,7 +333,7 @@ ul li a:hover{
 {
     color: rgb(0, 0, 0);
     list-style-type: none;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 600;
 }
 .pj li a
@@ -115,8 +345,9 @@ ul li a:hover{
 /********Copyright********/
 #copyright
 {
-    margin-top: 18%;
+    margin-top: 23%;
     margin-left: 2%;
+    font-size: 15px;
 }
 
 }
@@ -124,7 +355,7 @@ ul li a:hover{
 
 /********Responsive - For Desktop********/
 
-@media(min-width: 765px)
+@media(min-width: 850px)
 {
     
 /********Body********/
@@ -144,7 +375,7 @@ body
     float: center;
     height: 150px;
 }
-.header
+.nav-menu
 {
     margin-left: 41%;
     margin-top: 5%;
@@ -152,7 +383,7 @@ body
     display: flex;
     gap: 40px;
 }
-.header li a
+.nav-menu li a
 {
     text-decoration: none;
     color: rgb(182, 182, 182);
@@ -160,19 +391,37 @@ body
     font-size: 25px;
     
 }
-.header li#active a
+.nav-menu li#active a
 {
     color: rgb(0, 0, 0);
 }
 ul li a:hover{
     color: rgb(102, 102, 102);
 }
+.hamburger
+{
+    display: none;
+}
+.nav-menu
+{
+    position: fixed;
+    left: 0;
+    top: -2%;
+    right: 0;
+    gap: 40px;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+    text-align: center;
+    transition: 0.4s;
+}
+
 
 /********Introduction********/
 .intro
 {
     margin-left: 10%;
-    margin-top: 5%;
+    margin-top: 9%;
 }
 #name p
 {
@@ -183,6 +432,7 @@ ul li a:hover{
 #smallText p
 {
     font-size: 30px;
+    margin-top: -2%;
 }
 #smallText p #big
 {

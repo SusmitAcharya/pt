@@ -1,6 +1,6 @@
 /********Responsive - For Tablet********/
 
-@media(min-width: 590px)
+@media(min-width: 400px)
 {
 
 /********Body********/
@@ -20,7 +20,7 @@ body
     float: center;
     height: 120px;
 }
-.header
+.nav-menu
 {
     margin-left: 25%;
     margin-top: 5%;
@@ -28,7 +28,7 @@ body
     display: flex;
     gap: 40px;
 }
-.header li a
+.nav-menu li a
 {
     text-decoration: none;
     color: rgb(182, 182, 182);
@@ -36,7 +36,7 @@ body
     font-size: 25px;
     
 }
-.header li#active a
+.nav-menu li#active a
 {
     color: rgb(0, 0, 0);
 }
@@ -84,8 +84,8 @@ ul li a:hover{
 {
     list-style-type: none;
     display: flex;
-    gap: 7%;
-    margin-left: -5%;
+    gap: 8%;
+    margin-left: -5.5%;
     margin-top: -2%;
 }
 .myKnowledge .pictures .frame
@@ -117,7 +117,7 @@ ul li a:hover{
     padding: 2%;
     background-color: rgb(249, 249, 249);
     margin-top: 2%;
-    margin-right: 3%;
+    margin-right: 5%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .myProjects .frame1 .text1
@@ -147,7 +147,7 @@ ul li a:hover{
 
 /********Responsive - For Desktop********/
 
-@media(min-width: 765px)
+@media(min-width: 850px)
 {
 
 /********Body********/
@@ -167,7 +167,7 @@ body
     float: center;
     height: 120px;
 }
-.header
+.nav-menu
 {
     margin-left: 41%;
     margin-top: 5%;
@@ -175,7 +175,7 @@ body
     display: flex;
     gap: 40px;
 }
-.header li a
+.nav-menu li a
 {
     text-decoration: none;
     color: rgb(182, 182, 182);
@@ -183,7 +183,7 @@ body
     font-size: 25px;
     
 }
-.header li#active a
+.nav-menu li#active a
 {
     color: rgb(0, 0, 0);
 }

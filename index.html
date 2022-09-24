@@ -17,19 +17,29 @@
     <!-------------------Navigation Bar------------------->
     <div id="header">
         <header>
-            <ul class="header">
-                <li id="active"><a href="#">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href ="projects.html">Projects</a></li>
-            </ul>
+            <nav class="navBar">
+                <ul class="nav-menu">
+                    <li class="nav-item" id="active"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href ="projects.html" class="nav-link">Projects</a></li>
+                </ul>
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
         </header>
+
+        <script src="js/script.js"></script>
     </div>
 
     <!-------------------Introduction------------------->
     <div class="intro">
         <div id="name">
             <p>Hello</p>
-            <p>I'm Susmit Acharya!</p>
+            <p id="nameText">I'm Susmit Acharya!</p>
         </div>
         <div id="smallText">
             <p>Young Aspirant with dreams to be <span id="big">BIG ONE DAY!</span></p>
