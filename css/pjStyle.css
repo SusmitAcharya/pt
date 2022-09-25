@@ -1,6 +1,205 @@
+/********Responsive - For Mobile********/
+
+/********Body********/
+body
+{
+    margin: 10;
+    padding: 0;
+    font-family: Century Gothic;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    background-image: url("images/bg.png");
+}
+
+/********Navigation Bar********/
+#header
+{
+    float: center;
+    height: 120px;
+}
+.nav-menu
+{
+    margin-left: 25%;
+    margin-top: 5%;
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+}
+.nav-menu li a
+{
+    text-decoration: none;
+    color: rgb(182, 182, 182);
+    font-weight: 700;
+    font-size: 25px;
+    
+}
+.nav-menu li#active a
+{
+    color: rgb(0, 0, 0);
+}
+ul li a:hover{
+    color: rgb(102, 102, 102);
+}
+.hamburger
+{
+    display: block;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-left: 70%;
+}
+.bar
+{
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 5px auto;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background-color: #000;
+}
+
+.hamburger.active .bar:nth-child(2)
+{
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1)
+{
+    transform: translateY(9px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3)
+{
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+.nav-menu
+{
+    position: fixed;
+    left: -150%;
+    top: 40px;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.945);
+    width: 100%;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.nav-item
+{
+    margin: 16px 0;
+}
+.nav-menu.active
+{
+    left: -35%;
+}
+
+
+/********Horizontal Bars********/
+.hr
+{
+    margin-left: 40%;
+    margin-right: 36%;
+    margin-top: -20%;
+}
+.hr1
+{
+    margin-top: 12%;
+    margin-left: 36%;
+    margin-right: 36%;
+}
+
+/********My Knowledge********/
+.myKnowledge
+{
+    margin-left: 5%;
+    margin-top: 10%;
+}
+.myKnowledge #mk p
+{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+}
+.myKnowledge .text ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    font-size: 35px;
+    font-weight: 500;
+    margin-left: 25%;
+    margin-top: -2%;
+}
+.myKnowledge .pictures ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 110px;
+    margin-left: 8%;
+    margin-top: -190%;
+}
+.myKnowledge .pictures .frame
+{
+    padding: 10%;
+    background-color: rgb(249, 249, 249);
+    margin-right: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.myKnowledge .pictures .img
+{
+   width: 150px;
+   height: 150px;
+}
+
+/********My Projects********/
+.myProjects
+{
+    margin-top: 5%;
+}
+.myProjects #mp p
+{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+}
+.myProjects .frame1
+{
+    padding: 2%;
+    background-color: rgb(249, 249, 249);
+    margin-top: 8%;
+    margin-right: 8%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.myProjects .frame1 .text1
+{
+    font-size: 25px;
+    line-height: 45px;
+}
+.myProjects .frame1 .link1
+{
+    font-size: 20px;
+    font-style: italic;
+}
+.myProjects .frame1 .link1 p a
+{
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+}
+
+/********Copyright********/
+#copyright
+{
+    margin-top: 6%;
+    margin-left: -3%;
+    font-size: 13px;
+}
+
+
 /********Responsive - For Tablet********/
 
-@media(min-width: 400px)
+@media(min-width: 450px)
 {
 
 /********Body********/
@@ -43,6 +242,59 @@ body
 ul li a:hover{
     color: rgb(102, 102, 102);
 }
+.hamburger
+{
+    display: block;
+    cursor: pointer;
+    margin-top: 8%;
+    margin-left: 70%;
+}
+.bar
+{
+    display: block;
+    width: 40px;
+    height: 6px;
+    margin: 7px auto;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background-color: #000;
+}
+
+.hamburger.active .bar:nth-child(2)
+{
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1)
+{
+    transform: translateY(13px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3)
+{
+    transform: translateY(-13px) rotate(-45deg);
+}
+
+.nav-menu
+{
+    position: fixed;
+    left: -150%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.945);
+    width: 100%;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.nav-item
+{
+    margin: 16px 0;
+}
+.nav-menu.active
+{
+    left: -27%;
+}
+
 
 /********Horizontal Bars********/
 .hr
@@ -74,6 +326,7 @@ ul li a:hover{
 {
     list-style-type: none;
     display: flex;
+    flex-direction: row;
     gap: 21%;
     font-size: 40px;
     font-weight: 500;
@@ -84,7 +337,8 @@ ul li a:hover{
 {
     list-style-type: none;
     display: flex;
-    gap: 8%;
+    flex-direction: row;
+    gap: 9.5%;
     margin-left: -5.5%;
     margin-top: -2%;
 }
@@ -117,7 +371,7 @@ ul li a:hover{
     padding: 2%;
     background-color: rgb(249, 249, 249);
     margin-top: 2%;
-    margin-right: 5%;
+    margin-right: 8%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .myProjects .frame1 .text1
@@ -144,10 +398,9 @@ ul li a:hover{
 
 }
 
+/********Responsive - For Laptop********/
 
-/********Responsive - For Desktop********/
-
-@media(min-width: 850px)
+@media(min-width: 1050px)
 {
 
 /********Body********/
@@ -190,13 +443,196 @@ body
 ul li a:hover{
     color: rgb(102, 102, 102);
 }
+.hamburger
+{
+    display: none;
+}
+.nav-menu
+{
+    position: fixed;
+    left: -3%;
+    top: -2%;
+    right: 0;
+    gap: 40px;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+    text-align: center;
+    transition: 0.4s;
+}
+
+
+/********Horizontal Bars********/
+.hr
+{
+    margin-left: 40%;
+    margin-right: 32%;
+    margin-top: 4.9%;
+}
+.hr1
+{
+    margin-top: 7%;
+    margin-left: 36%;
+    margin-right: 32%;
+}
+
+/********My Knowledge********/
+.myKnowledge
+{
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.myKnowledge #mk p
+{
+    text-align: center;
+    font-size: 70px;
+    font-weight: 700;
+}
+.myKnowledge .text ul
+{
+    list-style-type: none;
+    display: flex;
+    gap: 25%;
+    font-size: 45px;
+    font-weight: 500;
+    margin-left: 9%;
+    margin-top: -2%;
+}
+.myKnowledge .pictures ul
+{
+    list-style-type: none;
+    display: flex;
+    gap: 135px;
+    margin-left: 3%;
+    margin-top: -2%;
+}
+.myKnowledge .pictures .frame
+{
+    padding: 10%;
+    background-color: rgb(249, 249, 249);
+    margin-right: -20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.myKnowledge .pictures .img
+{
+   width: 220px;
+   height: 220px;
+}
+
+/********My Projects********/
+.myProjects
+{
+    margin-top: 5%;
+}
+.myProjects #mp p
+{
+    text-align: center;
+    font-size: 70px;
+    font-weight: 700;
+}
+.myProjects .frame1
+{
+    padding: 2%;
+    background-color: rgb(249, 249, 249);
+    margin-top: 2%;
+    margin-right: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.myProjects .frame1 .text1
+{
+    font-size: 30px;
+}
+.myProjects .frame1 .link1
+{
+    font-size: 25px;
+    font-style: italic;
+}
+.myProjects .frame1 .link1 p a
+{
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+}
+
+/********Copyright********/
+#copyright
+{
+    margin-top: 6%;
+    margin-left: -3%;
+}
+
+}
+
+
+/********Responsive - For Desktop********/
+
+@media(min-width: 1500px)
+{
+
+/********Body********/
+body
+{
+    margin: 10;
+    padding: 0;
+    font-family: Century Gothic;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    background-image: url("images/bg.png");
+}
+
+/********Navigation Bar********/
+#header
+{
+    float: center;
+    height: 120px;
+}
+.nav-menu
+{
+    margin-left: 41%;
+    margin-top: 5%;
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+}
+.nav-menu li a
+{
+    text-decoration: none;
+    color: rgb(182, 182, 182);
+    font-weight: 700;
+    font-size: 25px;
+    
+}
+.nav-menu li#active a
+{
+    color: rgb(0, 0, 0);
+}
+ul li a:hover{
+    color: rgb(102, 102, 102);
+}
+.hamburger
+{
+    display: none;
+}
+.nav-menu
+{
+    position: fixed;
+    left: 0;
+    top: -2%;
+    right: 0;
+    gap: 40px;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+    text-align: center;
+    transition: 0.4s;
+}
+
 
 /********Horizontal Bars********/
 .hr
 {
     margin-left: 40%;
     margin-right: 36%;
-    margin-top: 0;
+    margin-top: 4.9%;
 }
 .hr1
 {

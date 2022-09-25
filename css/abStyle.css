@@ -1,6 +1,177 @@
+/********Responsive - For Mobile********/
+
+/********Body********/
+body
+{
+    margin: 10;
+    padding: 0;
+    font-family: Century Gothic;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    background-image: url("images/bg.png");
+}
+
+/********Navigation Bar********/
+#header
+{
+    float: center;
+    height: 150px;
+}
+.nav-menu
+{
+    margin-left: 25%;
+    margin-top: 5%;
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+}
+.nav-menu li a
+{
+    text-decoration: none;
+    color: rgb(182, 182, 182);
+    font-weight: 700;
+    font-size: 25px;
+    
+}
+.nav-menu li#active a
+{
+    color: rgb(0, 0, 0);
+}
+ul li a:hover{
+    color: rgb(102, 102, 102);
+}
+
+.hamburger
+{
+    display: block;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-left: 70%;
+}
+.bar
+{
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 5px auto;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background-color: #000;
+}
+
+.hamburger.active .bar:nth-child(2)
+{
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1)
+{
+    transform: translateY(9px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3)
+{
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+.nav-menu
+{
+    position: fixed;
+    left: -150%;
+    top: 40px;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.945);
+    width: 100%;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.nav-item
+{
+    margin: 16px 0;
+}
+.nav-menu.active
+{
+    left: -35%;
+}
+
+
+
+/********Horizontal Bars********/
+.hr
+{
+    margin-left: 40%;
+    margin-right: 36%;
+    margin-top: -30%;
+}
+
+/********Main********/
+.about
+{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.about .content
+{
+    margin-top: 7%;
+    padding: 2%;
+}
+.about .below
+{
+    margin-top: -2%;
+}
+.about .below1
+{
+    margin-top: 4%;
+}
+.about .image
+{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.about .left
+{
+    float:left;
+    margin: 3%;
+    width: 320px;
+    height:320px;
+}
+.about .right
+{
+    float: right;
+    margin-right: 3%;
+    margin-left: 2%;
+    width: 320px;
+    height:320px;
+}
+.about .text
+{
+    padding-left: 3%;
+    padding-right: 3.5%;
+    margin-top: 10%;
+    padding-top: 90%;
+    font-size: 24.4px;
+    line-height: 45px;
+    font-weight: 500;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about .text .quote
+{
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    line-height: 54px;
+}
+
+/********Copyright********/
+#copyright
+{
+    margin-top: 6%;
+    margin-left: 2%;
+}
+
+
 /********Responsive - For Tablet********/
 
-@media(min-width: 400px)
+@media(min-width: 450px)
 {
 
 /********Body********/
@@ -42,6 +213,58 @@ body
 }
 ul li a:hover{
     color: rgb(102, 102, 102);
+}
+.hamburger
+{
+    display: block;
+    cursor: pointer;
+    margin-top: 8%;
+    margin-left: 70%;
+}
+.bar
+{
+    display: block;
+    width: 40px;
+    height: 6px;
+    margin: 7px auto;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background-color: #000;
+}
+
+.hamburger.active .bar:nth-child(2)
+{
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1)
+{
+    transform: translateY(13px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3)
+{
+    transform: translateY(-13px) rotate(-45deg);
+}
+
+.nav-menu
+{
+    position: fixed;
+    left: -150%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.945);
+    width: 100%;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.nav-item
+{
+    margin: 16px 0;
+}
+.nav-menu.active
+{
+    left: -27%;
 }
 
 /********Horizontal Bars********/
@@ -95,6 +318,7 @@ ul li a:hover{
     padding-left: 3%;
     padding-right: 3.5%;
     margin-top: -1%;
+    padding-top: 0;
     font-size: 24.4px;
     line-height: 45px;
     font-weight: 500;
@@ -108,52 +332,7 @@ ul li a:hover{
     line-height: 54px;
 }
 
-/********Contact********
-.contact
-{
-    margin-top: 5%;
-    margin-left: 3%;
-    margin-right: 3%;
-}
-.contact .contactList
-{
-    list-style-type: none;
-    display: flex;
-}
-.contact .contactList .label
-{
-    padding-left: 2%;
-    padding-top: 3%;
-    width: 150%;
-    height: 100%;
-    background-color: #ff6600;
-    font-size: 30px;
-    color: #fff;
-    font-weight: 600;
-    text-align: center;
-}
-.contact .contactList .text
-{
-    width: 700%;
-    height: 80px;
-    margin-left: 15%;
-    background-color: black;
-    margin-right: -500%;
-}
-.contact .contactList .textBox
-{
-    width: 100%;
-    height: 125%;
-    font-size: 5px;
-    padding-left: 1%;
-}
 
-.contact .contactList .submit
-{
-    margin-left: 290%;
-    width: 70%;
-}
-**/
 
 /********Copyright********/
 #copyright
@@ -164,10 +343,9 @@ ul li a:hover{
 
 }
 
+/********Responsive - For Laptop********/
 
-/********Responsive - For Desktop********/
-
-@media(min-width: 850px)
+@media(min-width: 1050px)
 {
 
 /********Body********/
@@ -210,13 +388,166 @@ body
 ul li a:hover{
     color: rgb(102, 102, 102);
 }
+.hamburger
+{
+    display: none;
+}
+.nav-menu
+{
+    position: fixed;
+    left: -3%;
+    top: -2%;
+    right: 0;
+    gap: 40px;
+    flex-direction: row;
+    background-color: rgba(0, 225, 255, 0);
+    width: 100%;
+    text-align: center;
+    transition: 0.4s;
+}
+
+/********Horizontal Bars********/
+.hr
+{
+    margin-left: 40%;
+    margin-right: 32%;
+    margin-top: 3.5%;
+}
+
+/********Main********/
+.about
+{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.about .content
+{
+    margin-top: 7%;
+    padding: 2%;
+}
+.about .below
+{
+    margin-top: -2%;
+}
+.about .below1
+{
+    margin-top: 4%;
+}
+.about .image
+{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.about .left
+{
+    float: left;
+    margin: 3%;
+    width: 450px;
+    height: 450px;
+}
+.about .right
+{
+    float: right;
+    margin-right: 3%;
+    margin-left: 2%;
+    width: 450px;
+    height: 450px;
+}
+.about .text
+{
+    padding-left: 3%;
+    padding-right: 3.5%;
+    margin-top: -1%;
+    font-size: 25px;
+    line-height: 45px;
+    font-weight: 500;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about .text .quote
+{
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    line-height: 45px;
+}
+
+/********Copyright********/
+#copyright
+{
+    margin-top: 6%;
+    margin-left: 2%;
+}
+
+}
+
+/********Responsive - For Desktop********/
+
+@media(min-width: 1500px)
+{
+
+/********Body********/
+body
+{
+    margin: 10;
+    padding: 0;
+    font-family: Century Gothic;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    background-image: url("images/bg.png");
+}
+
+/********Navigation Bar********/
+#header
+{
+    float: center;
+    height: 150px;
+}
+.nav-menu
+{
+    margin-left: 41%;
+    margin-top: 5%;
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+}
+.nav-menu li a
+{
+    text-decoration: none;
+    color: rgb(182, 182, 182);
+    font-weight: 700;
+    font-size: 25px;
+    
+}
+.nav-menu li#active a
+{
+    color: rgb(0, 0, 0);
+}
+ul li a:hover{
+    color: rgb(102, 102, 102);
+}
+.hamburger
+{
+    display: none;
+}
+.nav-menu
+{
+    position: fixed;
+    left: 0;
+    top: -2%;
+    right: 0;
+    gap: 40px;
+    flex-direction: row;
+    background-color: rgba(0, 225, 255, 0);
+    width: 100%;
+    text-align: center;
+    transition: 0.4s;
+}
 
 /********Horizontal Bars********/
 .hr
 {
     margin-left: 40%;
     margin-right: 36%;
-    margin-top: 0;
+    margin-top: 3.5%;
 }
 
 /********Main********/
@@ -274,53 +605,6 @@ ul li a:hover{
     font-size: 35px;
     line-height: 45px;
 }
-
-/********Contact********
-.contact
-{
-    margin-top: 5%;
-    margin-left: 3%;
-    margin-right: 3%;
-}
-.contact .contactList
-{
-    list-style-type: none;
-    display: flex;
-}
-.contact .contactList .label
-{
-    padding-left: 2%;
-    padding-top: 3%;
-    width: 150%;
-    height: 100%;
-    background-color: #ff6600;
-    font-size: 30px;
-    color: #fff;
-    font-weight: 600;
-    text-align: center;
-}
-.contact .contactList .text
-{
-    width: 700%;
-    height: 80px;
-    margin-left: 15%;
-    background-color: black;
-    margin-right: -500%;
-}
-.contact .contactList .textBox
-{
-    width: 100%;
-    height: 125%;
-    font-size: 5px;
-    padding-left: 1%;
-}
-
-.contact .contactList .submit
-{
-    margin-left: 290%;
-    width: 70%;
-}
-**/
 
 /********Copyright********/
 #copyright
