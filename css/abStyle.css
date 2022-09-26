@@ -130,14 +130,15 @@ ul li a:hover{
 .about .left
 {
     float:left;
-    margin: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
     width: 320px;
     height:320px;
 }
 .about .right
 {
     float: right;
-    margin-right: 3%;
+    margin-right: 0;
     margin-left: 2%;
     width: 320px;
     height:320px;

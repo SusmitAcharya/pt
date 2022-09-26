@@ -128,8 +128,9 @@ ul li a:hover{
     gap: 200px;
     font-size: 35px;
     font-weight: 500;
-    margin-left: 25%;
+    margin-left: -15%;
     margin-top: -2%;
+    text-align: center;
 }
 .myKnowledge .pictures ul
 {
@@ -137,14 +138,14 @@ ul li a:hover{
     display: flex;
     flex-direction: column;
     gap: 110px;
-    margin-left: 8%;
-    margin-top: -190%;
+    margin-left: 5%;
+    margin-top: -205%;
 }
 .myKnowledge .pictures .frame
 {
     padding: 10%;
     background-color: rgb(249, 249, 249);
-    margin-right: 30%;
+    margin-right: 26%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .myKnowledge .pictures .img
@@ -492,7 +493,7 @@ ul li a:hover{
 {
     list-style-type: none;
     display: flex;
-    gap: 25%;
+    gap: 30%;
     font-size: 45px;
     font-weight: 500;
     margin-left: 9%;
@@ -502,7 +503,7 @@ ul li a:hover{
 {
     list-style-type: none;
     display: flex;
-    gap: 135px;
+    gap: 19.5%;
     margin-left: 3%;
     margin-top: -2%;
 }
