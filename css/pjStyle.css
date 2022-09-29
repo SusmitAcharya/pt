@@ -1,5 +1,8 @@
 /********Responsive - For Mobile********/
 
+
+/********For Small Mobile********/
+
 /********Body********/
 body
 {
@@ -195,6 +198,209 @@ ul li a:hover{
     margin-top: 6%;
     margin-left: -3%;
     font-size: 13px;
+}
+
+
+/********For Larger Mobile********/
+
+@media(min-width: 380px)
+{
+/********Body********/
+body
+{
+    margin: 10;
+    padding: 0;
+    font-family: Century Gothic;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    background-image: url("images/bg.png");
+}
+
+/********Navigation Bar********/
+#header
+{
+    float: center;
+    height: 120px;
+}
+.nav-menu
+{
+    margin-left: 25%;
+    margin-top: 5%;
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+}
+.nav-menu li a
+{
+    text-decoration: none;
+    color: rgb(182, 182, 182);
+    font-weight: 700;
+    font-size: 25px;
+    
+}
+.nav-menu li#active a
+{
+    color: rgb(0, 0, 0);
+}
+ul li a:hover{
+    color: rgb(102, 102, 102);
+}
+.hamburger
+{
+    display: block;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-left: 70%;
+}
+.bar
+{
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 5px auto;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background-color: #000;
+}
+
+.hamburger.active .bar:nth-child(2)
+{
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1)
+{
+    transform: translateY(9px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3)
+{
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+.nav-menu
+{
+    position: fixed;
+    left: -150%;
+    top: 40px;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.945);
+    width: 100%;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.nav-item
+{
+    margin: 16px 0;
+}
+.nav-menu.active
+{
+    left: -35%;
+}
+
+
+/********Horizontal Bars********/
+.hr
+{
+    margin-left: 40%;
+    margin-right: 36%;
+    margin-top: -20%;
+}
+.hr1
+{
+    margin-top: 12%;
+    margin-left: 36%;
+    margin-right: 36%;
+}
+
+/********My Knowledge********/
+.myKnowledge
+{
+    margin-left: 5%;
+    margin-top: 10%;
+}
+.myKnowledge #mk p
+{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+}
+.myKnowledge .text ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    font-size: 35px;
+    font-weight: 500;
+    margin-left: -15%;
+    margin-top: -2%;
+    text-align: center;
+}
+.myKnowledge .pictures ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 110px;
+    margin-left: 5%;
+    margin-top: -190%;
+}
+.myKnowledge .pictures .frame
+{
+    padding: 10%;
+    background-color: rgb(249, 249, 249);
+    margin-right: 26%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.myKnowledge .pictures .img
+{
+   width: 150px;
+   height: 150px;
+}
+
+/********My Projects********/
+.myProjects
+{
+    margin-top: 5%;
+}
+.myProjects #mp p
+{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+}
+.myProjects .frame1
+{
+    padding: 2%;
+    background-color: rgb(249, 249, 249);
+    margin-top: 8%;
+    margin-right: 8%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.myProjects .frame1 .text1
+{
+    font-size: 25px;
+    line-height: 45px;
+}
+.myProjects .frame1 .link1
+{
+    font-size: 20px;
+    font-style: italic;
+}
+.myProjects .frame1 .link1 p a
+{
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+}
+
+/********Copyright********/
+#copyright
+{
+    margin-top: 6%;
+    margin-left: -3%;
+    font-size: 13px;
+}
 }
 
 
